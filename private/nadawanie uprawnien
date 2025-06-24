@@ -1,0 +1,7 @@
+mysql -u root -p -P 3307
+
+USE blog_db;
+
+SELECT id, username, email, role FROM users;
+
+UPDATE users SET role = 'admin' WHERE email = 'email_uzytkownika@example.com';

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #222;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 40px;
+}
+
+.post-preview {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-preview h2 {
+    margin-bottom: 5px;
+}
+
+.info {
+    color: #555;
+    font-style: italic;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.comment {
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.comment .meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
