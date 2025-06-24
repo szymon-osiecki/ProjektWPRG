@@ -17,7 +17,6 @@ $post_id = (int)$_GET['id'];
 $error = '';
 $success = '';
 
-// Pobranie posta
 $stmt = $pdo->prepare("SELECT * FROM posts WHERE id = ?");
 $stmt->execute([$post_id]);
 $post = $stmt->fetch();
