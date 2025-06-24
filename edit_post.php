@@ -54,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("UPDATE posts SET title = ?, content = ?, image = ? WHERE id = ?");
             $stmt->execute([$title, $content, $image, $post_id]);
             $success = "Post został zaktualizowany!";
-            // Przeładuj dane
             $post['title'] = $title;
             $post['content'] = $content;
             $post['image'] = $image;
