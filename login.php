@@ -27,17 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = 'Nieprawidłowy e-mail lub hasło.';
         }
     }
-    if ($user && password_verify($password, $user['password'])) {
-        $_SESSION['user_id'] = $user['id'];
-        $_SESSION['username'] = $user['username'];
-        $_SESSION['role'] = $user['role'];
-
-        // Dodaj ciasteczko na 7 dni
-        setcookie('last_logged_user', $user['username'], time() + (7 * 24 * 60 * 60), '/');
-
-        header("Location: index.php");
-        exit;
-    }
 
 }
 ?>
