@@ -6,10 +6,6 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
-/**
- * Zwraca nowe połączenie PDO z bazą danych
- * @return PDO
- */
 function getPDO() {
     $dsn = 'mysql:host=' . DB_HOST . ';port=' . DB_PORT . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET;
     $options = [
